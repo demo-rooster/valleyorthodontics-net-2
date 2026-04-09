@@ -1,80 +1,53 @@
 {
   "enable_development_mode": false,
-  "company_name": "Tyska Alexander Orthodontics",
-  "domain": "taortho.com",
-  "email": "info@mandtortho.com",
+  "company_name": "Valley Orthodontics",
+  "domain": "valleyorthodontics.net",
+  "email": "smiles@valleyorthodontics.net",
   "phone": {
-    "number": "(716) 759-8323",
-    "href": "tel:+17167598323",
-    "aria": "7 1 6, 7 5 9, 8 3 2 3"
+    "number": "415-479-2400",
+    "href": "tel:+14154792400",
+    "aria": "4 1 5, 4 7 9, 2 4 0 0"
   },
   "location": [
     {
-      "title": "Clarence Office",
+      "title": "",
       "address": {
-        "street": "9650 Main Street",
-        "suite": "",
-        "city_state": "Clarence, NY 14031",
+        "street": "2400 Las Gallinas Ave",
+        "suite": "Suite 130",
+        "city_state": "San Rafael, CA 94903",
         "coordinates": {
-          "longitude": "-78.6314355",
-          "latitude": "42.9736638"
+          "longitude": "",
+          "latitude": ""
         }
       },
       "phone": {
-        "number": "(716) 759-8323",
-        "href": "tel:+17167598323"
+        "number": "415-479-2400",
+        "href": "tel:+14154792400"
       },
-      "email": "info@mandtortho.com",
+      "email": "smiles@valleyorthodontics.net",
       "hours": [
         {
           "day": "Monday",
-          "time": "8:30 am \t6:30 pm"
+          "time": "8:30am \t6:00pm"
         },
         {
           "day": "Tuesday",
-          "time": "8:30 am \t6:30 pm"
+          "time": "9:00am \t5:00pm"
         },
         {
           "day": "Wednesday",
-          "time": "8:00 am \t11:30 am"
+          "time": "8:30am \t5:00pm"
         },
         {
           "day": "Thursday",
-          "time": "8:00 am \t6:00 pm"
-        },
-        {
-          "day": "Friday",
-          "time": "8:00 am \t11:30 am"
+          "time": "9:00am \t5:00pm"
         }
       ],
       "directions_link": {
-        "href": "https://www.google.com/maps/search/?api=1&query=9650+Main+St+Clarence+NY+14031",
+        "href": "https://www.google.com/maps/place/2400+Las+Gallinas+Ave+%23130,+San+Rafael,+CA+94903,+USA/data=!4m2!3m1!1s0x808597fbf5e3426f:0xd39afa2fa2fb8452?sa=X&ved=1t:242&ictx=111",
         "label": "Get Directions"
       },
-      "special_note": ""
-    },
-    {
-      "title": "Tonawanda Office",
-      "address": {
-        "street": "1077 Delaware Rd",
-        "suite": "",
-        "city_state": "Tonawanda, NY 14223",
-        "coordinates": {
-          "longitude": "-78.8730228",
-          "latitude": "42.9901241"
-        }
-      },
-      "phone": {
-        "number": "(716) 875-0405",
-        "href": "tel:+17168750405"
-      },
-      "email": "info@mandtortho.com",
-      "hours": [],
-      "directions_link": {
-        "href": "https://www.google.com/maps/search/?api=1&query=1077+Delaware+Rd+Tonawanda+NY+14223",
-        "label": "Get Directions"
-      },
-      "special_note": ""
+      "special_note": "Serving patients across San Rafael, Marin County, Mill Valley, Novato, and surrounding communities."
     }
   ],
   "typography": [
@@ -94,28 +67,28 @@
     "content_alignment": "right",
     "links": [
       {
-        "icon": "tooth-two-v1",
-        "text": "9650 Main Street, Clarence, NY 14031",
-        "href": "https://www.google.com/maps/search/?api=1&query=9650+Main+St+Clarence+NY+14031",
-        "label": "View 9650 Main Street, Clarence, NY 14031 on google maps",
+        "icon": "tooth-two-v2",
+        "text": "2400 Las Gallinas Ave Suite 130, San Rafael, CA 94903",
+        "href": "https://www.google.com/maps/place/2400+Las+Gallinas+Ave+%23130,+San+Rafael,+CA+94903,+USA/data=!4m2!3m1!1s0x808597fbf5e3426f:0xd39afa2fa2fb8452?sa=X&ved=1t:242&ictx=111",
+        "label": "View 2400 Las Gallinas Ave Suite 130, San Rafael, CA 94903 on Google Maps",
         "new_window": true
       },
       {
         "icon": "phone",
-        "text": "(716) 759-8323",
-        "href": "tel:+17167598323",
-        "label": "Call 7 1 6. 7 5 9. 8 3 2 3.",
+        "text": "415-479-2400",
+        "href": "tel:+14154792400",
+        "label": "Call 4 1 5. 4 7 9. 2 4 0 0.",
         "new_window": false
       }
     ],
     "announcement": {
       "icon": "tooth-two-v2",
-      "label": "",
-      "text": "",
-      "mobile_text": "",
+      "label": "Practice update",
+      "text": "Valley Orthodontics offers complimentary consultations and modern, patient-focused care for children, teens, and adults.",
+      "mobile_text": "Complimentary consultations available",
       "modal": {
-        "title": "",
-        "text": ""
+        "title": "Valley Orthodontics",
+        "text": "Valley Orthodontics provides personalized, non-extraction focused care using modern technology (iTero 3D scanning, 2D/3D X-rays, Invisalign). Call or book a complimentary consultation online."
       }
     }
   },
@@ -150,20 +123,28 @@
   "footer": {
     "social_media": [
       {
-        "href": "https://www.youtube.com/channel/UC1pgQhnbNQ7Mf0xFm_2KF-g",
-        "icon": "youtube"
+        "href": "https://www.facebook.com/valleyorthomarin/",
+        "icon": "facebook"
+      },
+      {
+        "href": "https://www.instagram.com/valley_orthodontics/",
+        "icon": "instagram"
+      },
+      {
+        "href": "https://www.yelp.com/biz/valley-orthodontics-san-rafael?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)",
+        "icon": "yelp"
       }
     ],
     "add_border": false
   },
   "enable_popup": false,
   "popup": {
-    "title": "",
+    "title": "Welcome to Valley Orthodontics",
     "text": "",
     "image": {
-      "src": "",
+      "src": "https://www.valleyorthodontics.net/wp-content/uploads/2024/09/logo.webp",
       "webp": "",
-      "alt": "",
+      "alt": "Valley Orthodontics logo",
       "aria_hidden": false,
       "bgColor": "",
       "imageBackground": false,
@@ -171,7 +152,9 @@
       "objectPosition": "",
       "forceAlt": "",
       "loading_mask": "",
-      "image_selection_hints": null
+      "image_selection_hints": {
+        "context_category": "About Hero"
+      }
     }
   }
 }
