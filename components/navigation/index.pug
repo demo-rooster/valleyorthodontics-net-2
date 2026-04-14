@@ -10,7 +10,7 @@ header.navigation(:class="{ 'navigation--floating': !isDarkVariant && !isScrolli
         BaseIcon.navigation__logo(v-else-if='hasLogo' :name='logoName')
         span.navigation__logo-text(v-else) {{ companyName }}
       
-      nav.navigation__nav-primary(v-if='windowWidth > 1280')
+      nav.navigation__nav-primary(v-if='windowWidth > 1280 && links.length')
 
         .navigation__links
           .navigation__link-container(v-for='(link, i) in links',
@@ -30,7 +30,7 @@ header.navigation(:class="{ 'navigation--floating': !isDarkVariant && !isScrolli
         BlockButton.navigation__cta(:props='cta.button')
       
 
-    nav.navigation__mobile(v-if='windowWidth <= 1280')
+    nav.navigation__mobile(v-if='windowWidth <= 1280 && hasMobileDrawerContent')
       button.navigation__hamburger(aria-haspopup='true' tabindex='0' ref='hamburger' aria-label='Open main menu' @click='openDrawer')
         span(v-for='(span, i) in 3', :key='`hamburger-span-${i}`')
             
@@ -47,7 +47,7 @@ header.navigation(:class="{ 'navigation--floating': !isDarkVariant && !isScrolli
             span.navigation__logo-text-mobile(v-else) {{ companyName }}
           button.navigation__drawer-close(@click='closeDrawer' tabindex='0') Close
         .navigation__content-container
-          .navigation__drawer-main-menu
+          .navigation__drawer-main-menu(v-if='mobileLinks.length')
 
             .navigation__drawer-menu-item(v-for='(link, i) in mobileLinks', :key='`mobile-nav-link-${i}`', tabindex='-1')
               .navigation__drawer-row

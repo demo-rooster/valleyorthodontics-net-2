@@ -27,11 +27,25 @@ export default {
     currentDropdown: null
   }),
   computed: {
+    hideNavigationLinks () {
+      return !!this.props?.nav?.hide_dropdowns
+    },
     links () {
+      if (this.hideNavigationLinks) {
+        return []
+      }
+
       return router.filter(link => link.navigation)
     },
     mobileLinks () {
+      if (this.hideNavigationLinks) {
+        return []
+      }
+
       return router.filter(link => link.navigation || link.mobile)
+    },
+    hasMobileDrawerContent () {
+      return this.mobileLinks.length || this.props?.nav?.buttons?.length
     },
     logoName () {
       const isFloating = !this.isScrolling && this.props?.nav?.floating && !this.$store.state.noFloatTop && !this.$route.path.includes('/blog') && !this.$route.path.includes('/privacy-policy') && !this.$route.path.includes('/404') && !this.$route.path.includes('/accessibility')
@@ -94,6 +108,9 @@ export default {
       this.windowWidth = window.innerWidth
     },
     toggleDropdown (i, e) {
+      if (this.hideNavigationLinks) {
+        return
+      }
       this.currentDropdown === i ? this.currentDropdown = null : this.currentDropdown = i
       if (this.currentDropdown !== null) {
         this.handleDropdown(e)
@@ -104,6 +121,9 @@ export default {
       this.currentDropdown = null
     },
     handleDropdown (e) {
+      if (this.hideNavigationLinks) {
+        return
+      }
       this.$nextTick(() => {
         if (e.target.nextSibling !== null) {
           const element = e.target.nextSibling

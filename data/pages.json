@@ -10,7 +10,7 @@
         "label": "Schedule Consultation",
         "aria_label": "Schedule a consultation",
         "href": "",
-        "path": "/contact",
+        "path": "/",
         "hash": "#form",
         "external": false,
         "include_icon": false,
@@ -19,8 +19,8 @@
       },
       "media_type": "image",
       "image": {
-        "src": "https://www.valleyorthodontics.net/wp-content/uploads/2024/09/poster.png",
-        "webp": "https://www.valleyorthodontics.net/wp-content/uploads/2024/09/9f1f28_9d0ce31e703148a0bb596122a8442ab4mv2.webp",
+        "src": "/homepage-scrape/valley-hero/valley-hero.jpg",
+        "webp": "/homepage-scrape/valley-hero/valley-hero.webp",
         "alt": "Valley Orthodontics team and patients smiling",
         "aria_hidden": false,
         "bgColor": "",
@@ -40,7 +40,7 @@
     },
     {
       "acf_fc_layout": "block_text_fh",
-      "title": "Welcome to Valley Orthodontics",
+      "title": "Welcome",
       "paragraphs": [
         {
           "text": "Valley Orthodontics believes that creating a beautiful smile involves more than just straightening teeth. We look at the whole face when treating patients, emphasizing non‑extraction options to achieve balanced faces, full smiles, and healthy bites."
@@ -209,7 +209,7 @@
       ],
       "accordion": [],
       "image": {
-        "src": "",
+        "src": "https://www.valleyorthodontics.net/wp-content/uploads/2024/09/Dr_-Rocha.webp",
         "webp": "",
         "alt": "Dr. Rocha headshot",
         "aria_hidden": false,
@@ -249,7 +249,7 @@
         "hide_component": false
       },
       "reverse": false,
-      "has_buttons": true,
+      "has_buttons": false,
       "has_accordion": false,
       "is_dynamic": false,
       "use_video": false,
@@ -258,14 +258,14 @@
       "background": "bg1",
       "linear_gradient": "",
       "add_texture": false,
-      "large_title": true,
+      "large_title": false,
       "title_color": "text",
       "title_underline_color": "primary",
       "preserve_image": true
     },
     {
       "acf_fc_layout": "block_masonary_grid",
-      "title": "Explore Our Treatments",
+      "title": "Explore Your Treatment Options",
       "paragraphs": [
         {
           "text": "From clear aligners to traditional braces and long‑term retention, we offer treatment options tailored to each patient."
@@ -289,9 +289,9 @@
       "items": [
         {
           "image": {
-            "src": "https://www.valleyorthodontics.net/wp-content/uploads/2024/09/Invisalign-Provider-Logo-RGB.webp",
+            "src": "https://ik.imagekit.io/9ry3lupe5/licensed-adobe-assets/474277371_Woman_with_dental_invisible_invisalign_braces_or_s.jpg",
             "webp": "",
-            "alt": "Invisalign provider logo",
+            "alt": "Woman smiling with clear aligners",
             "aria_hidden": false,
             "bgColor": "",
             "imageBackground": false,
@@ -307,7 +307,7 @@
         },
         {
           "image": {
-            "src": "https://www.valleyorthodontics.net/wp-content/uploads/2024/09/5CDFDEEC-EAF2-4BA7-BB1F-E91436EB542B.png",
+            "src": "https://ik.imagekit.io/9ry3lupe5/licensed-adobe-assets/48486569_teeth_with_braces.jpg",
             "webp": "",
             "alt": "Patient smiling during treatment",
             "aria_hidden": false,
@@ -325,7 +325,7 @@
         },
         {
           "image": {
-            "src": "https://www.valleyorthodontics.net/wp-content/uploads/2024/09/9f1f28_a68081c92c0a48f394cd7d5fdb5b2014mv2.webp",
+            "src": "https://ik.imagekit.io/9ry3lupe5/licensed-adobe-assets/251233256_Closeup_beautiful_smiling_woman_with_retainer_for.jpg",
             "webp": "",
             "alt": "Retention and finishing care",
             "aria_hidden": false,
@@ -343,9 +343,9 @@
         },
         {
           "image": {
-            "src": "https://www.valleyorthodontics.net/wp-content/uploads/2025/03/logo-tm_angel-aligner-logo.png",
+            "src": "https://ik.imagekit.io/9ry3lupe5/licensed-adobe-assets/62056177_Hand_holding_a_translucent_upper_essix_retainer.jpg",
             "webp": "",
-            "alt": "Angel Aligner partner logo",
+            "alt": "Clear aligner tray in hand",
             "aria_hidden": false,
             "bgColor": "",
             "imageBackground": false,
@@ -403,6 +403,19 @@
       "has_background": true,
       "background": "bg1",
       "linear_gradient": ""
+    },
+    {
+      "acf_fc_layout": "form",
+      "form": [
+        1025
+      ],
+      "stack": false,
+      "component_options": {
+        "hash": "form",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      }
     },
     {
       "acf_fc_layout": "multi_use_banner",
@@ -478,7 +491,7 @@
         "label": "Schedule Consultation",
         "aria_label": "Schedule a consultation",
         "href": "",
-        "path": "/contact",
+        "path": "/",
         "hash": "#form",
         "external": false,
         "include_icon": false,
