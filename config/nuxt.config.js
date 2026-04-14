@@ -1,12 +1,12 @@
+import fs from 'fs'
+import path from 'path'
 import axios from 'axios'
 import { api } from '../resources/api'
-import { setData } from '../resources/utils'
+import { setJSONData } from '../resources/utils'
 import { siteHead } from './head.config.js'
 import buildConfig from './build.config.js'
 import { siteMap, setRobots } from './seo.config'
 import 'core-js/features/array/at'
-const path = require('path')
-const fs = require('fs')
 
 // Load theme.json using absolute path from project root
 const themeFile = path.join(process.cwd(), 'data', 'theme.json')
@@ -30,8 +30,9 @@ if (googleFonts.length > 0) {
 console.log('Theme typography:', typography)
 console.log('Google Fonts to load:', googleFonts)
 
-export default async () => {
-  const meta = await setData('home')
+export default () => {
+  const homePage = setJSONData('home') || {}
+  const meta = homePage.meta || { title: homePage.title || 'Valley Orthodontics' }
   return {
     server: {
       port: 8080,

@@ -45,7 +45,7 @@ export const getForms = async () => {
       `${api}/wp/v2/forms?per_page=100`
     )
     const dataPages = response.headers['x-wp-totalpages']
-    let dataArray = response.data
+    let dataArray = Array.isArray(response.data) ? response.data : []
     for (let i = 2; i <= dataPages; i++) {
       const nextPage = await axios.get(
         `${api}/wp/v2/forms?per_page=100&page=${i}`
@@ -60,6 +60,7 @@ export const getForms = async () => {
     }))
   } catch (e) {
     console.error(`ERROR getting FORMS posts: ${e}`)
+    return []
   }
 }
 

@@ -19,7 +19,7 @@ export default {
     TheNavigation
   },
   data: () => ({
-    forms: null,
+    forms: [],
     posts: null,
     global: null,
     theme: null,
@@ -30,7 +30,7 @@ export default {
     $route: 'onRouteChange'
   },
   async fetch () {
-    this.forms = await getForms()
+    this.forms = await getForms() || []
     this.posts = await getCustomPosts('posts', 2)
     this.global = await setJSONData('global', 'globalData')
     const theme = await getThemeJSON()

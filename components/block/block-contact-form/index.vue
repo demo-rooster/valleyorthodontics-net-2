@@ -13,13 +13,17 @@ export default {
       default: () => ({})
     }
   },
-  data: () => ({
-    selectedForm: null
-  }),
-  mounted () {
-    this.$nextTick(() => {
-      this.selectedForm = this.$store.state.forms.find(form => form.id.toString() === this.props.form[0].toString())
-    })
+  computed: {
+    selectedForm () {
+      const forms = Array.isArray(this.$store.state.forms) ? this.$store.state.forms : []
+      const selectedFormId = Array.isArray(this.props.form) ? this.props.form[0] : this.props.form
+
+      if (selectedFormId === undefined || selectedFormId === null) {
+        return null
+      }
+
+      return forms.find(form => form.id.toString() === selectedFormId.toString()) || null
+    }
   }
 }
 </script>

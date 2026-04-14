@@ -1,24 +1,30 @@
 import { url } from '../resources/api'
 
-export const siteHead = (meta, theme = {}) => {
+export const siteHead = (meta = {}, theme = {}) => {
   const faviconUrl = theme?.default?.favicon_url || '/favicon.ico'
+  const seo = meta.seo || meta.meta?.seo || {}
+  const ogMeta = seo.social_meta?.og_meta || {}
+  const pageTitle = seo.page_title || meta.title || 'Valley Orthodontics'
+  const pageDescription = seo.page_description || ''
+  const pageKeywords = seo.page_keywords || ''
+
   return {
     htmlAttrs: { lang: 'en' },
-    title: meta.seo.page_title ? meta.seo.page_title : meta.title,
+    title: pageTitle,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'referrer', content: 'no-referrer' },
       { hid: 'robots', name: 'robots', content: 'noindex, nofollow' },
-      { hid: 'description', name: 'description', content: meta.seo.page_description },
-      { hid: 'keywords', name: 'keywords', content: meta.seo.page_keywords ? meta.seo.page_keywords : '' },
+      { hid: 'description', name: 'description', content: pageDescription },
+      { hid: 'keywords', name: 'keywords', content: pageKeywords },
       // OG Meta
       { hid: 'og:type', property: 'og:type', content: 'website' },
-      meta.seo.social_meta.og_meta.title && { hid: 'og:title', property: 'og:title', content: meta.seo.social_meta.og_meta.title },
-      meta.seo.social_meta.og_meta.description && { hid: 'og:description', property: 'og:description', content: meta.seo.social_meta.og_meta.description },
-      meta.seo.social_meta.og_meta.image && { hid: 'og:image', property: 'og:image', content: meta.seo.social_meta.og_meta.image },
+      ogMeta.title && { hid: 'og:title', property: 'og:title', content: ogMeta.title },
+      ogMeta.description && { hid: 'og:description', property: 'og:description', content: ogMeta.description },
+      ogMeta.image && { hid: 'og:image', property: 'og:image', content: ogMeta.image },
       { hid: 'og:url', property: 'og:url', content: url }
-    ],
+    ].filter(Boolean),
     link: [
       { rel: 'icon', href: faviconUrl },
       { rel: 'preconnect', href: 'https://fonts.googleapis.com' },

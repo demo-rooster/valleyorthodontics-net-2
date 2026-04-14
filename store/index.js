@@ -4,7 +4,7 @@ import storeMutations from './storeMutations'
 export const state = () => ({
   devInspector: false,
   devTools: false,
-  forms: null,
+  forms: [],
   posts: null,
   global: null,
   isPhoneLandLg: false,
